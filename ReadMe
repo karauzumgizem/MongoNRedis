@@ -1,0 +1,6 @@
+Projenin ayağa kalkması için redis server ın 6379 portu üzerinde ayağa kalkmış olması gerekiyor.
+Yine prje klasörü içerisindeki dump klasörünüm içerisinde FarmasiCase adında bir db backup ı mevcut. Bunun restore edilmesi gerek.
+Ayrıntılar için çok kısa bir video kaydı hazırladım, onu da 2022-10-08 16-15-56.kkv ismi ile bulabilirsiniz.
+
+MongoDB ve Redis'i ilk defa bir projede kullanmış oldum.
+Teşekkürler.
