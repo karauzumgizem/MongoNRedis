@@ -1,0 +1,90 @@
+﻿@model List<FarmasiCase.Entities.Dto.ProductDto>
+@{
+
+	Layout = "_Layout";
+}
+
+
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<body>
+	<div class="content-body">
+		<h2 style="color:#f05a6a"><b>Ürünler</b></h2>
+		<hr style="color:#f05a6a" />
+
+
+		<section id="basic-examples">
+			<div class="row">
+				<div class="col-xl-2 col-md-6 col-sm-12">
+				</div>
+			</div>
+			<br />
+			<br />
+
+			<div class="row match-height">
+				@foreach (var item in Model)
+				{
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="card" style="border-style:solid ">
+							<div class="card-content">
+								<img class="card-img-top img-fluid" src="../../../app-assets/images/carousel/06.jpg" alt="Card image cap">
+								<div class="card-body">
+                               
+
+									<h4 class="card-title"><b>@item.ProductName</b></h4>
+									<p class="card-text">Fiyat: @item.Price</p>
+									<p class="card-text">Stok: @item.Quantity</p>
+									<a class="btn  btn-outline-secondary"  data-id="@item.Id" data-name="@item.ProductName" data-price="@item.Price">Ekle</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				}
+			</div>
+		</section>
+	</div>
+</body>
+<!-- END: Body-->
+
+</html>
+
+ <script src="~/js/swal.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script>
+    $(".btn").on('click', function() 
+	{
+        var _id= $(this).data("id");
+        var ProductName=$(this).data("name");
+        var Price=$(this).data("price");
+
+        $.ajax(
+        {
+            type: "POST",
+            url: '/Basket/AddBasket',
+            data: {Id:_id, ProductName:ProductName, Price:Price},
+            success: function (data)
+                    {
+                     if(data=="1") 
+                     {
+                         Swal.fire(
+                            'Başarı!',
+                            'Ürün sepete eklendi!',
+                            'success');
+
+                            setTimeout(Refresh, 2000);
+
+                     }
+                     else
+                     {
+                            Swal.fire(
+                            'Hata',
+                            'Ürün sepete eklenemedi!',
+                            'danger');
+                     }
+                    }
+        }
+     );
+	});
+
+</script>

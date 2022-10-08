@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+    <meta name="keywords" content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+    <meta name="author" content="PIXINVENT">
+    <title>Farmasi Mongo n Redis</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <style>
+        .menu-title {
+            color: #f05a6a;
+        }
+
+        i {
+            color: #f05a6a;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/weather-icons/climacons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="~/app-assets/fonts/meteocons/style.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/charts/morris.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/charts/chartist.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/css/charts/chartist-plugin-tooltip.css">
+    <!-- END: Vendor CSS-->
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/components.css">
+    <!-- END: Theme CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/core/menu/menu-types/vertical-content-menu.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/pages/timeline.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/pages/dashboard-ecommerce.css">
+    <!-- END: Page CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-content-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-content-menu" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-hide-on-scroll navbar-border navbar-shadow navbar-brand-center">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-10"></i></a></li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">
+                            <h2 class="brand-text" style="color:#f05a6a"><b>Farmasi Mongo n Redis</b></h2>
+                        </a>
+                    </li>
+                    <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content">
+                <div class="collapse navbar-collapse" id="navbar-mobile">
+                    <ul class="nav navbar-nav mr-auto float-left">
+                        <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+
+            <div class="main-menu menu-static menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+                <div class="main-menu-content">
+                    <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+
+                 
+                        <li class=" nav-item">
+                           <a asp-controller="Home" asp-action="Index"><i class="la la-database"></i><span class="menu-title" data-i18n="Knowledge Base">Ürünler</span></a> </li>
+       <li class=" nav-item">
+                            <a asp-controller="Basket" asp-action="GetAll"><i class="la la-shopping-cart"></i><span class="menu-title" data-i18n="Knowledge Base">Sepet</span></a>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <footer class="container-fluid  py-5" style="background-color:#f05a6a">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="logo-part">
+                                <h1 style="color:white">FARMASI</h1>
+                                <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                                <p>Use this tool as test data for an automated system or find your next pen</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-4">
+                            <h6> About Company</h6>
+                            <p>But horizontal lines can only be a full pixel high.</p>
+                            <a href="#" class="btn-footer"> More Info </a><br>
+                            <a href="#" class="btn-footer"> Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 px-4">
+                            <h6> Help us</h6>
+                            <div class="row ">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li> <a href="#"> Home</a> </li>
+                                        <li> <a href="#"> About</a> </li>
+                                        <li> <a href="#"> Service</a> </li>
+                                        <li> <a href="#"> Team</a> </li>
+                                        <li> <a href="#"> Help</a> </li>
+                                        <li> <a href="#"> Contact</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 px-4">
+                                    <ul>
+                                        <li> <a href="#"> Cab Faciliy</a> </li>
+                                        <li> <a href="#"> Fax</a> </li>
+                                        <li> <a href="#"> Terms</a> </li>
+                                        <li> <a href="#"> Policy</a> </li>
+                                        <li> <a href="#"> Refunds</a> </li>
+                                        <li> <a href="#"> Paypal</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <h6> Newsletter</h6>
+
+                            <form class="form-footer my-3">
+                                <input type="text" placeholder="search here...." name="search">
+                                <input type="button" value="Go">
+                            </form>
+                            <p>That's technology limitation of LCD monitors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/app-assets/vendors/js/vendors.min.js"></script>
+
+    <script src="~/app-assets/vendors/js/ui/headroom.min.js"></script>
+    <script src="~/app-assets/vendors/js/charts/chartist.min.js"></script>
+    <script src="~/app-assets/vendors/js/charts/chartist-plugin-tooltip.min.js"></script>
+    <script src="~/app-assets/vendors/js/charts/raphael-min.js"></script>
+    <script src="~/app-assets/vendors/js/charts/morris.min.js"></script>
+    <script src="~/app-assets/vendors/js/timeline/horizontal-timeline.js"></script>
+
+    <script src="~/app-assets/js/core/app-menu.js"></script>
+    <script src="~/app-assets/js/core/app.js"></script>
+
+    <script src="~/app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
+    @*    <script src="~/app-assets/js/core/libraries/jquery.min.js"></script>*@
+    <script src="~/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    @*    <script src="~/app-assets/js/scripts/pages/page-users.js"></script>*@
+
+
+</body>
+
+
+</html>
+
+
+<style>
+
+    footer .bg-grey {
+        color: white;
+    }
+
+    .logo-footer {
+        margin-bottom: 40px;
+    }
+
+    footer {
+        color: white;
+        font-size: 12px;
+    }
+
+        footer p, a {
+            color: white;
+        }
+
+        footer h6 {
+            margin-bottom: 40px;
+            position: relative;
+            color: white;
+        }
+
+            footer h6:after {
+                position: absolute;
+                content: "";
+                width: 12%;
+                height: 1px;
+                left: 0;
+                bottom: -20px;
+            }
+
+    .btn-footer {
+        color: white;
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 43px;
+        font-size: 13px;
+        padding: 7px 30px;
+        line-height: 47px;
+    }
+
+        .btn-footer:hover {
+            text-decoration: none;
+        }
+
+    .form-footer input[type="text"] {
+        border: none;
+        border-radius: 16px 0 0 16px;
+        outline: none;
+        padding-left: 10px;
+    }
+
+    footer ::placeholder {
+        font-size: 10px;
+        padding-left: 10px;
+        font-style: italic;
+    }
+
+    .form-footer input[type="button"] {
+        border: none;
+        background-color: white;
+        margin-left: -5px;
+        /*    color: #fff;*/
+        outline: none;
+        border-radius: 0 16px 16px 0;
+        padding: 2px 12px;
+    }
+
+    .social .fa {
+        color: black;
+        font-size: 22px;
+        padding: 10px 15px;
+        background-color: white;
+    }
+
+    footer ul li {
+        list-style: none;
+        display: block;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+            text-decoration: none;
+        }
+
+    footer a:hover {
+        text-decoration: none;
+        color: #f5f5f5 !important;
+    }
+
+    .logo-part {
+        height: 100%;
+    }
+</style>
+
+@*#f05a6a*@

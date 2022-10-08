@@ -1,0 +1,220 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Data\\FarmasiCase.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Data\\FarmasiCase.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Data\\FarmasiCase.Data.csproj",
+        "projectName": "FarmasiCase.Data",
+        "projectPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Data\\FarmasiCase.Data.csproj",
+        "packagesPath": "C:\\Users\\gizem.karauzum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gizem.karauzum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Entities\\FarmasiCase.Entities.csproj": {
+                "projectPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Entities\\FarmasiCase.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ServiceStack.Redis.Core": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.66, )"
+            },
+            "mongocsharpdriver": {
+              "target": "Package",
+              "version": "[2.17.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Entities\\FarmasiCase.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Entities\\FarmasiCase.Entities.csproj",
+        "projectName": "FarmasiCase.Entities",
+        "projectPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Entities\\FarmasiCase.Entities.csproj",
+        "packagesPath": "C:\\Users\\gizem.karauzum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gizem.karauzum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Shared\\FarmasiCase.Shared.csproj": {
+                "projectPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Shared\\FarmasiCase.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Shared\\FarmasiCase.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Shared\\FarmasiCase.Shared.csproj",
+        "projectName": "FarmasiCase.Shared",
+        "projectPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Shared\\FarmasiCase.Shared.csproj",
+        "packagesPath": "C:\\Users\\gizem.karauzum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gizem.karauzum\\Desktop\\FarmasiCase\\FarmasiCase.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gizem.karauzum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

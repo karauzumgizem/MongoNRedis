@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="mongocsharpdriver" Version="2.17.1" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="6.3.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FarmasiCase.Entities\FarmasiCase.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
